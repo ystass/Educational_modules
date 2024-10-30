@@ -22,8 +22,8 @@ class Module(models.Model):
         return self.title
 
     class Meta:
-        verbose_name = "Курс"
-        verbose_name_plural = "Курсы"
+        verbose_name = "Модуль"
+        verbose_name_plural = "Модули"
 
 
 class Lesson(models.Model):
@@ -33,12 +33,12 @@ class Lesson(models.Model):
 
     description = models.TextField(verbose_name="Описание урока", **NULLABLE)
 
-    preview = models.ImageField(upload_to="materials/lessons", **NULLABLE)
+    preview = models.ImageField(upload_to="modules/lessons", **NULLABLE)
 
     url = models.URLField(verbose_name="Ccылка на видео", **NULLABLE)
 
-    course = models.ForeignKey(
-        Module, on_delete=models.SET_NULL, verbose_name="Курс", **NULLABLE
+    module = models.ForeignKey(
+        Module, on_delete=models.SET_NULL, verbose_name="Модуль", **NULLABLE
     )
 
     owner = models.ForeignKey(
