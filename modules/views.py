@@ -1,11 +1,11 @@
-from rest_framework.viewsets import ModelViewSet
 from rest_framework.generics import (CreateAPIView, DestroyAPIView,
                                      ListAPIView, RetrieveAPIView,
                                      UpdateAPIView)
-from modules.models import Module, Lesson
+from rest_framework.viewsets import ModelViewSet
 
+from modules.models import Lesson, Module
 from modules.pagination import ModulesPaginator
-from modules.serializer import ModuleSerializer, LessonSerializer
+from modules.serializer import LessonSerializer, ModuleSerializer
 
 
 class ModuleViewSet(ModelViewSet):
