@@ -6,7 +6,7 @@ from modules.apps import ModulesConfig
 app_name = ModulesConfig.name
 
 router = SimpleRouter()
-router.register("modules", ModuleViewSet, basename="modules")
+router.register("", ModuleViewSet, basename="modules")
 
 urlpatterns = []
 
