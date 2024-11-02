@@ -13,6 +13,11 @@ class ModuleViewSet(ModelViewSet):
     queryset = Module.objects.all()
     pagination_class = ModulesPaginator
 
+    def perform_create(self, serializer):
+        module = serializer.save()
+        module.owner = self.request.user
+        module.save()
+
 
 class LessonCreateAPIView(CreateAPIView):
     queryset = Lesson.objects.all()
