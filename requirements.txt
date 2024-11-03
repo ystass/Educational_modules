@@ -5,3 +5,4 @@ python-dotenv==1.0.1
 pillow==11.0.0
 black==24.10.0
 isort==5.13.2
+coverage==7.6.1
