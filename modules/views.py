@@ -23,6 +23,11 @@ class LessonCreateAPIView(CreateAPIView):
     queryset = Lesson.objects.all()
     serializer_class = LessonSerializer
 
+    def perform_create(self, serializer):
+        lesson = serializer.save()
+        lesson.owner = self.request.user
+        lesson.save()
+
 
 class LessonListAPIView(ListAPIView):
     queryset = Lesson.objects.all()
