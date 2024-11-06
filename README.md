@@ -1,6 +1,6 @@
 ПРОЕКТ "ОБРАЗОВАТЕЛЬНЫЕ МОДУЛИ
 
-        Educational_modules
+        "Educational_modules"
         
 ОПИСАНИЕ
 
