@@ -1,6 +1,5 @@
 ПРОЕКТ "ОБРАЗОВАТЕЛЬНЫЕ МОДУЛИ
-
-        "Educational_modules"
+"Educational_modules"
         
 ОПИСАНИЕ
 
@@ -19,7 +18,7 @@
 
 * В виртуальном окружении установите все зависимости:
 
-pip install -r requirements.txt
+        pip install -r requirements.txt
 
 * Создайте файл .env по подобию .env.sample в корневой директории и заполните необходимые переменные окружения:
 
