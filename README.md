@@ -38,7 +38,7 @@ python manage.py migrate
 
 * Запустите сервер:
 
-python3 manage.py runserver
+python manage.py runserver
 
 * Используйте команду csu для создания тестового суперпользователя
 
