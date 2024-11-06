@@ -1,4 +1,5 @@
 ПРОЕКТ "ОБРАЗОВАТЕЛЬНЫЕ МОДУЛИ
+
 "Educational_modules"
         
 ОПИСАНИЕ
@@ -34,18 +35,18 @@ POSTGRES_PASSWORD=пароль пользователя
 
 * Примените миграции:
 
-python manage.py migrate
+        python manage.py migrate
 
 * Запустите сервер:
 
-python manage.py runserver
+        python manage.py runserver
 
 * Используйте команду csu для создания тестового суперпользователя
 
-python manage.py csu
+        python manage.py csu
 
 * Для работы в админке перейдите по адресу: http://127.0.0.1:8000/admin
 
 * Для запуска контейнеров через Docker: Запустите Docker, прожмите команду:
 
-docker-compose up -d --build
+        docker-compose up -d --build
