@@ -9,6 +9,7 @@
 ТЕХНОЛОГИИ
 * Python
 * Django
+* Django Rest Framework
 * PostgreSQL
 * Docker
 * Docker-compose
